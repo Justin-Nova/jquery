@@ -1,0 +1,15 @@
+.pclass {
+    padding: 5px;
+    font-size: 25px;
+    border: 1px dashed coral;
+    margin: 10px 0;
+}
+
+.classexam1 {
+    background: #e91e63;
+    color: #9e9e9e;
+    border: 5px solid coral;
+
+}
+
+#inforhtml {font-style: italic;}

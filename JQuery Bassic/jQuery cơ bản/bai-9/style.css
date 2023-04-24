@@ -1,0 +1,18 @@
+#container1 p
+{
+    background-color: #b92c28;
+    color: white;
+    padding: 10px;
+    animation-duration: 3s;
+    -webkit-animation-name: keyframes1;
+    -moz-animation-name: keyframes1;
+    -o-animation-name: keyframes1;
+    animation-name: keyframes1;
+
+}
+
+@keyframes keyframes1
+{
+    0%  {opacity: 0;}
+    100% {opacity: 1;}
+}

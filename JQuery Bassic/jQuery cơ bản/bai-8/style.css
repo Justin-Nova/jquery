@@ -1,0 +1,44 @@
+.boxvd, .boxvd * {
+    padding: 5px;
+    margin: 2px;
+    border: 1px dotted gray;
+    list-style: none;
+    font-weight: normal;
+    color: black;
+    display: block;
+    background-color: rgba(128,128,128,0.05);
+}
+#selectedele {
+    font-weight: bold;
+    color: orangered;
+    border: 1px solid #00CC00;
+
+}
+
+#buttonxt button {
+    background-color: orangered;
+    border: none;
+    margin: 3px 0;
+}
+
+.traversal {
+    animation-name: keyframes1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes keyframes1  {
+    0% {
+        background-color: red;
+        color: black;
+        opacity: 0;
+    }
+    100% {
+        color: #e91e63;
+        border: 1px solid #e91e63;
+        opacity: 1;
+        background-color: rgba(128,128,128,0.05);
+
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="boxvd">
+        <p>phần tử p</p>
+        <div>phần tử div
+            <p>phần tử p</p>
+            <p>phần tử p</p>
+            <p>phần tử p</p>
+            <div id="selectedele">phần tử chọn
+                <div>phần tử div</div>
+                <div>phần tử div
+                    <p>phần tử p <i>phần tử i</i></p>
+                    <h5>phần tử h5 <span>phần tử span</span></h5>
+                </div>
+                <div>phần tử div</div>
+            </div>
+            <p>phần tử p</p>
+            <p>phần tử p</p>
+            <p>phần tử p</p>
+        </div>
+
+        <p>phần tử div</p>
+    </div>
+
+    <div id="buttonxt">
+        <button onclick="reset()">Reset</button>
+        <button onclick="parent_ele()">parent()</button>
+        <button onclick="children_ele()">children()</button>
+        <button onclick="siblings_ele()">siblings()</button>
+        <button onclick="next_ele()">next()</button>
+        <button onclick="nextAll_ele()">nextAll()</button>
+        <button onclick="prev_ele()">prev()</button>
+        <button onclick="prevAll_ele()">prevAll()</button>
+        <button onclick="eq_ele()">eq(1)</button>
+        <button onclick="find_ele()">find('i,span')</button>
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+
+</body>
+
+</html>

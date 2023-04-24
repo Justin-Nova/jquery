@@ -1,0 +1,14 @@
+#ele1 {
+    background-color: #ff5329;
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.rem {
+    margin-left: 5px;
+    background-color: white;
+    color: red;
+    border: none;
+    cursor: pointer;
+}

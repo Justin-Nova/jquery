@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn tạo DropDown menu với jQuery</title>
+</head>
+
+<body>
+    <div class="menu1 xt-ct-menu">
+    <div class="xtlab-ctmenu-item">Dropdown 1</div>
+    <div class="xtlab-ctmenu-sub">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    </div>
+
+    <div class="menu2 xt-ct-menu">
+    <div class="xtlab-ctmenu-item">Dropdown 2</div>
+    <div class="xtlab-ctmenu-sub">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    </div>
+
+    <script>
+        jQuery.fn.extend({
+            setMenu:function () {
+                return this.each(function() {
+                    var containermenu = $(this);
+        
+                    var itemmenu = containermenu.find('.xtlab-ctmenu-item');
+                    itemmenu.click(function () {
+                        var submenuitem = containermenu.find('.xtlab-ctmenu-sub');
+                        submenuitem.slideToggle(500);
+        
+                    });
+        
+                    $(document).click(function (e) {
+                        if (!containermenu.is(e.target) &&
+                            containermenu.has(e.target).length === 0) {
+                             var isopened =
+                                containermenu.find('.xtlab-ctmenu-sub').css("display");
+        
+                             if (isopened == 'block') {
+                                 containermenu.find('.xtlab-ctmenu-sub').slideToggle(500);
+                             }
+                        }
+                    });
+        
+        
+        
+                });
+            },
+        
+        });
+        
+        
+        $('.xt-ct-menu').setMenu();
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
