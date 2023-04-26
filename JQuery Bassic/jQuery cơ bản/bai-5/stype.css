@@ -14,7 +14,7 @@
     border: 1px dashed gray;
     padding: 5px;
     animation-name: keyframes1;
-    animation-duration: 2s;
+    animation-duration: 5s;
 }
 
 #phantudiv>p.phantup {
@@ -23,5 +23,6 @@
 
 @keyframes keyframes1 {
     0%  {opacity: 0;}
+    50% {opacity: 0.5;}
     100% {opacity: 1;}
 }

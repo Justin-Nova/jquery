@@ -6,10 +6,10 @@ $("#button1").click(function () {
         "background":"orangered"});
 
     $("#example1").animate(
-        {"width": "100%", "height": "100px"}, 2000);
+        {"width": "100%", "height": "50px"}, 2000);
 });
 
-$("div").animate({
+$("#example1").animate({
     width: '+=250px',
     height: '+=250px'
   }, 1000);
